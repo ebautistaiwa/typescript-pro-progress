@@ -2,9 +2,10 @@
     "compilerOptions": {
         "outDir": "./dist"
     },
-    "exclude": [
+    "include": [
         "src/two.ts",
         "src/internal",
-        "src/**/*.internal.ts"
+        "src/**/*.internal.ts",
+        "src/m???.ts"
     ]
 }
