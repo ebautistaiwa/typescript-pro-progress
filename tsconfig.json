@@ -7,5 +7,12 @@
         "src/internal",
         "src/**/*.internal.ts",
         "src/m???.ts"
+    ],
+    "exclude": [
+        "src/**/two.internal.ts",
+        "src/**/*.external.ts"
+    ],
+    "files": [
+        "./src/one.external.ts"
     ]
 }
