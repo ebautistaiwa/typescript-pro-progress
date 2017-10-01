@@ -1,18 +1,7 @@
 {
     "compilerOptions": {
-        "outDir": "./dist"
-    },
-    "include": [
-        "src/two.ts",
-        "src/internal",
-        "src/**/*.internal.ts",
-        "src/m???.ts"
-    ],
-    "exclude": [
-        "src/**/two.internal.ts",
-        "src/**/*.external.ts"
-    ],
-    "files": [
-        "./src/one.external.ts"
-    ]
+        "outDir": "./dist",
+        "noEmit": false,
+        "noEmitOnError": true
+    }
 }

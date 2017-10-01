@@ -1,8 +1,0 @@
-{
-    "compilerOptions": {
-        "allowJs": false,
-        "allowSyntheticDefaultImports": false,
-        "allowUnreachableCode": false,
-        "allowUnusedLabels": false
-    }
-}
