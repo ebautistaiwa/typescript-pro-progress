@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "noEmit": false,
-        "noEmitOnError": true
+        "declaration": true,
+        "stripInternal": true
     }
 }
