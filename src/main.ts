@@ -1,8 +1,7 @@
-/** @internal */
-function main(){
-    console.log('TypeScript Pro!')
+let foo = 'bar'
+
+function add(a: number, b: number){
+    return a + b
 }
 
-function foo(){}
-
-main()
+add(1, 2)

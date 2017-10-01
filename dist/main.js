@@ -1,7 +1,5 @@
-/** @internal */
-function main() {
-    console.log('TypeScript Pro!');
+var foo = 'bar';
+function add(a, b) {
+    return a + b;
 }
-function foo() { }
-main();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9tYWluLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQUNoQjtJQUNJLE9BQU8sQ0FBQyxHQUFHLENBQUMsaUJBQWlCLENBQUMsQ0FBQTtBQUNsQyxDQUFDO0FBRUQsaUJBQWUsQ0FBQztBQUVoQixJQUFJLEVBQUUsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbIi8qKiBAaW50ZXJuYWwgKi9cbmZ1bmN0aW9uIG1haW4oKXtcbiAgICBjb25zb2xlLmxvZygnVHlwZVNjcmlwdCBQcm8hJylcbn1cblxuZnVuY3Rpb24gZm9vKCl7fVxuXG5tYWluKCkiXX0=
+add(undefined, null);
