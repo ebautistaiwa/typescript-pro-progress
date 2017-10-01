@@ -1,7 +1,9 @@
-let foo = 'bar'
-
-function add(a: number, b: number){
-    return a + b
+interface Person{
+    name: string,
+    age: number
 }
 
-add(1, 2)
+const john: Person = {
+    name: 'John',
+    age: 45
+}
