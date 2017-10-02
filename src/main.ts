@@ -1,3 +1,13 @@
-import { two } from './two'
+//import polyfill
+import 'reflect-metadata'
+import { Component, Input } from '@angular/core'
 
-two()
+/** 
+ * Configure Component
+*/
+@Component({
+    selector: 'app'
+})
+class AppComponent{
+    @Input() foo: string
+}

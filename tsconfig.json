@@ -1,13 +1,11 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitReturns": true,
-        "noImplicitUseStrict": false,
-        "alwaysStrict": true
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "emitBOM": true,
+        "removeComments": true,
+        "newLine": "CRLF"
     }
 }

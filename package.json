@@ -1,0 +1,11 @@
+{
+  "name": "typescript-pro-progress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ebautistaiwa/typescript-pro-progress",
+  "author": "Emanuel <ebautista@iwa.com.mx>",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/core": "^4.4.4"
+  }
+}
