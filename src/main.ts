@@ -1,9 +1,5 @@
-interface Person{
-    name: string,
-    age: number
-}
+let x = 10
 
-const john: Person = {
-    name: 'John',
-    age: 45
+loop: while(x < 10){
+    x++
 }
