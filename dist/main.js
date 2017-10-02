@@ -1,3 +1,3 @@
-import { two } from './two';
-two();
-const foo = true;
+"use strict";
+exports.__esModule = true;
+twoe();
