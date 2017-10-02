@@ -1,3 +1,4 @@
 "use strict";
 exports.__esModule = true;
-twoe();
+var two_1 = require("./two");
+two_1.two();

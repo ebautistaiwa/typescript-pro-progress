@@ -1,3 +1,3 @@
 import { two } from './two'
 
-twoe()
+two()
