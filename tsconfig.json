@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",
-        //"noEmitHelpers": true
-        "importHelpers": true
+        "outFile": "./dist/bundle.js",
+        "module": "system"
     }
 }
