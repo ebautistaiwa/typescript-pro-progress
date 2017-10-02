@@ -1,11 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "typeRoots": [
-            "./node_modules@types"
-        ],
-        "types": [
-            "jquery"
-        ]
+        //"noEmitHelpers": true
+        "importHelpers": true
     }
 }
