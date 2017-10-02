@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "skipLibCheck": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "emitBOM": true,
-        "removeComments": true,
-        "newLine": "CRLF"
+        "typeRoots": [
+            "./node_modules@types"
+        ],
+        "types": [
+            "jquery"
+        ]
     }
 }
