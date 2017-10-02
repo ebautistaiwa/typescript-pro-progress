@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
-        "outFile": "./dist/bundle.js",
-        "module": "system"
+        "outDir": "./dist",
+        "jsx": "react",
+        //"reactNamespace": "h"
+        "jsxFactory": "hyperscript"
     }
 }
