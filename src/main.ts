@@ -1,5 +1,17 @@
-let x = 10
+function log(msg: string){
+    if(msg.length > 4){
+        return null
+    }
+    console.log(msg)
+    return undefined
+}
 
-loop: while(x < 10){
-    x++
+function compare(arg: any){
+    switch(typeof arg){
+        case 'string':
+            console.log('Fallthrough case')
+            break
+        default:
+            console.log('Default case')
+    }
 }

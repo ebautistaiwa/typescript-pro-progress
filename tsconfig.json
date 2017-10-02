@@ -3,9 +3,9 @@
         "outDir": "./dist",
         "noImplicitAny": true,
         "strictNullChecks": true,
-        "suppressImplicitAnyIndexErrors": false,
-        "suppressExcessPropertyErrors": false,
-        "allowUnreachableCode": true,
-        "allowUnusedLabels": true
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true
     }
 }
