@@ -1,12 +1,11 @@
-// <input id="myInput">
-const el1 = <HTMLInputElement>document.getElementById('myInput')
-const el2 = document.getElementById('myInput') as HTMLInputElement
-
-if(el1){
-    el1.autocomplete
+function addTo(x?: number){
+    x = x || 0
+    return function add(y: number){
+        return x! + y
+    }
+    //x = x || 0
+    //return add
 }
 
-const x = {}
-
-const y1 = (x as any).foo.bar.qux
-const y2 = ((x as any).foo as any).bar.qux
+const addTo1 = addTo(1)
+addTo1(4)// 5
