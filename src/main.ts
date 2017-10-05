@@ -1,17 +1,12 @@
-interface Bar{
-    bar: any
+// <input id="myInput">
+const el1 = <HTMLInputElement>document.getElementById('myInput')
+const el2 = document.getElementById('myInput') as HTMLInputElement
+
+if(el1){
+    el1.autocomplete
 }
 
-function isBar(arg: any): arg is Bar{
-    return arg.bar !== 'undefined'
-}
+const x = {}
 
-function isString(arg: any): arg is string{
-    return typeof arg === 'string'
-}
-
-function foo(x: number | string){
-    if(isString(x)){
-        x.substr
-    }
-}
+const y1 = (x as any).foo.bar.qux
+const y2 = ((x as any).foo as any).bar.qux
