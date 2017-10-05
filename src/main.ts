@@ -1,11 +1,13 @@
-function addTo(x?: number){
-    x = x || 0
-    return function add(y: number){
-        return x! + y
-    }
-    //x = x || 0
-    //return add
+interface A{ a: string }
+interface B{ b: string }
+
+const foo: A & B = {
+    a: '',
+    b: ''
 }
 
-const addTo1 = addTo(1)
-addTo1(4)// 5
+const bar = {
+    x: true
+}
+
+const foobar = Object.assign(foo, bar)

@@ -3,6 +3,9 @@
         "outDir": "./dist",
         "noImplicitAny": true,
         "strictNullChecks": true,
-        "noImplicitThis": true
+        "noImplicitThis": true,
+        "lib": [
+            "es2015"
+        ]
     }
 }
