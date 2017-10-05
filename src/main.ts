@@ -3,15 +3,19 @@ interface Person{
     age: number
 }
 
-type keys = keyof Person
-type personName = Person['name']
+type partialPerson = Partial<Person>
+//Pick
+//Record
 
-const foo = {
-    x: true
+function makePersonReadOnly(p: Person): Readonly<Person>{
+    return Object.freeze(p)
 }
 
-function getProperty<T, K extends keyof T>(obj: T, key: K){
-    return obj[key]
+type Stringified<T> = {
+    [P in keyof T]: string
 }
 
-getProperty(foo, 'x')
+const stringifiedPerson: Stringified<Person> = {
+    name: 'John',
+    age: '45'
+}
