@@ -1,13 +1,17 @@
-interface A{ a: string }
-interface B{ b: string }
-
-const foo: A & B = {
-    a: '',
-    b: ''
+interface Person{
+    name: string,
+    age: number
 }
 
-const bar = {
+type keys = keyof Person
+type personName = Person['name']
+
+const foo = {
     x: true
 }
 
-const foobar = Object.assign(foo, bar)
+function getProperty<T, K extends keyof T>(obj: T, key: K){
+    return obj[key]
+}
+
+getProperty(foo, 'x')
