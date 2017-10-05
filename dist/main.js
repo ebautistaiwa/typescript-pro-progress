@@ -1,11 +1,14 @@
-"use strict";
-exports.__esModule = true;
-var React = require("react");
-var hyperscript = require("hyperscript");
-var Hello = function (props) {
-    return hyperscript("h1", null,
-        "Hello, ",
-        props.place,
-        "!");
+'use strict';
+var petStore = {
+    pets: ['dog', 'cat'],
+    createRandomPetPicker: function () {
+        var _this = this;
+        return function () {
+            var pets = _this.pets;
+            var i = Math.floor(Math.random() * pets.length);
+            return pets[i];
+        };
+    }
 };
-React.DOM.render(hyperscript(Hello, { place: "World" }), document.getElementById('example'));
+var getRandomPet = petStore.createRandomPetPicker();
+console.log(getRandomPet());
