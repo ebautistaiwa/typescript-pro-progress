@@ -4,8 +4,6 @@
         "noImplicitAny": true,
         "strictNullChecks": true,
         "noImplicitThis": true,
-        "lib": [
-            "es2015"
-        ]
+        "preserveConstEnums": true
     }
 }

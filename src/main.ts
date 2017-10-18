@@ -1,21 +1,12 @@
-interface Person{
-    name: string,
-    age: number
+declare enum Foo{
+    Bar = 1
 }
 
-type partialPerson = Partial<Person>
-//Pick
-//Record
-
-function makePersonReadOnly(p: Person): Readonly<Person>{
-    return Object.freeze(p)
+const enum CDS{
+    OnPush,
+    Default
 }
 
-type Stringified<T> = {
-    [P in keyof T]: string
-}
-
-const stringifiedPerson: Stringified<Person> = {
-    name: 'John',
-    age: '45'
+function isDefaultCDS(cds: CDS): boolean{
+    return cds == null || cds === CDS.Default
 }
