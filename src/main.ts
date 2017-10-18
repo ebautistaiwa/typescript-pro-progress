@@ -1,12 +1,22 @@
-declare enum Foo{
-    Bar = 1
+enum Shapes{
+    Circle,
+    Square,
+    Triangle
 }
 
-const enum CDS{
-    OnPush,
-    Default
+function numCorners(shape: Shapes){
+    switch(shape){
+        case Shapes.Circle:
+            return 0
+        case Shapes.Square:
+            return 4
+        case Shapes.Triangle:
+            return 3
+        default:
+            impossibleShape(shape)
+    }
 }
 
-function isDefaultCDS(cds: CDS): boolean{
-    return cds == null || cds === CDS.Default
+function impossibleShape(shape: never): never{
+    throw new Error('Unhandled ${shape}')
 }
